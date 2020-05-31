@@ -4,7 +4,9 @@ import { createAppContainer, createSwitchNavigator } from "react-navigation";
 import Welcome from "../Pages/Welcome";
 import Steps from "../Pages/Steps";
 import Receive from "../Pages/Receive";
-import Taste from "../Pages/Taste";
+import Record from "../Pages/Record";
+import Senses from "../Components/Senses";
+import LoadScreen from "../Components/LoadScreen";
 
 export default () =>
   createAppContainer(
@@ -13,7 +15,9 @@ export default () =>
         Welcome,
         Steps,
         Receive,
-        Taste,
+        Senses,
+        LoadScreen,
+        Record,
       },
       {
         initialRouteName: "Welcome",

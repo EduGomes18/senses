@@ -26,7 +26,12 @@ const Steps = () => {
       </ImgUp>
       <ImgUp source={couple}>
         <Blur />
-        <Step color={Primary}>
+        <Step
+          color={Primary}
+          onPress={() => {
+            navigate("Record");
+          }}
+        >
           <StepTitle>Record Experience</StepTitle>
         </Step>
       </ImgUp>

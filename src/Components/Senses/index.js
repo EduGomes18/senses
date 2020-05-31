@@ -7,7 +7,11 @@ import { useNavigation } from "react-navigation-hooks";
 
 import { Container, BackButton, Back, VideoArea } from "./styles";
 
-const Taste = () => {
+const Senses = () => {
+  const { navigate, getParam } = useNavigation();
+
+  const optionParam = getParam("options");
+
   const [full, setFull] = useState(false);
 
   async function orientation(e) {
@@ -28,7 +32,6 @@ const Taste = () => {
 
   const [playing, setPlaying] = useState(true);
 
-  const { navigate } = useNavigation();
   return (
     <Container full={full}>
       <BackButton
@@ -46,7 +49,7 @@ const Taste = () => {
           height="90%"
           ref={playerRef}
           webViewProps="allowsFullscreenVideo"
-          videoId={"KZ-aUTuobr4"}
+          videoId={optionParam.video}
           play={playing}
           onChangeState={(event) => orientation(event)}
           volume={50}
@@ -61,4 +64,4 @@ const Taste = () => {
   );
 };
 
-export default Taste;
+export default Senses;

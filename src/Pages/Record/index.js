@@ -2,11 +2,11 @@ import React from "react";
 import { useNavigation } from "react-navigation-hooks";
 import { Red, Primary, Secondary, Gray, Yellow } from "../../Config";
 
-import taste from "../../../assets/images/pizza.jpg";
-import smell from "../../../assets/images/smell-2.jpg";
-import hear from "../../../assets/images/hear.jpg";
-import touch from "../../../assets/images/touch.jpg";
-import sight from "../../../assets/images/sight.jpg";
+import taste from "../../../assets/images/tastes.png";
+import smell from "../../../assets/images/mask.png";
+import hear from "../../../assets/images/vr.png";
+import touch from "../../../assets/images/gloves.png";
+import sight from "../../../assets/images/vr.png";
 
 import {
   MaterialIcons,
@@ -24,9 +24,10 @@ import {
   CardInner,
   BackButton,
   Back,
+  RecordTitle,
 } from "./styles";
 
-const Receive = () => {
+const Record = () => {
   const { navigate } = useNavigation();
   return (
     <Container>
@@ -38,15 +39,15 @@ const Receive = () => {
         <Ionicons name="md-arrow-round-back" size={24} color="black" />
         <Back>Back</Back>
       </BackButton>
+      <RecordTitle>Choose a sense to record:</RecordTitle>
       <Card
         onPress={() => {
           navigate("LoadScreen", {
             options: {
-              title: "Prepare your Flavour gadget for a better experience",
-              route: "Senses",
+              title: "Please connect your Flavour gadget first!",
+              route: "Record",
               img: "taste",
-              video: "eFBNYwStw04",
-              btn: "Start",
+              btn: "Back",
             },
           });
         }}
@@ -62,11 +63,10 @@ const Receive = () => {
         onPress={() => {
           navigate("LoadScreen", {
             options: {
-              title: "Prepare your Haptice suit for a better experience",
-              route: "Senses",
+              title: "Please connect your Haptice suit first!",
+              route: "Record",
               img: "gloves",
-              video: "BbT_e8lWWdo",
-              btn: "Start",
+              btn: "Back",
             },
           });
         }}
@@ -82,11 +82,11 @@ const Receive = () => {
         onPress={() => {
           navigate("LoadScreen", {
             options: {
-              title: "Prepare your Mask for a better experience",
-              route: "Senses",
+              title: "Please connect your Mask first!",
+              route: "Record",
               img: "mask",
               video: "7AkbUfZjS5k",
-              btn: "Start",
+              btn: "Back",
             },
           });
         }}
@@ -102,11 +102,10 @@ const Receive = () => {
         onPress={() => {
           navigate("LoadScreen", {
             options: {
-              title: "Prepare your VR for a better experience",
-              route: "Senses",
+              title: "Please Connect your VR first!",
+              route: "Record",
               img: "vr",
-              video: "BbT_e8lWWdo",
-              btn: "Start",
+              btn: "Back",
             },
           });
         }}
@@ -122,11 +121,10 @@ const Receive = () => {
         onPress={() => {
           navigate("LoadScreen", {
             options: {
-              title: "Prepare your VR for a better experience",
-              route: "Senses",
+              title: "Please Connect your VR first!",
+              route: "Record",
               img: "vr",
-              video: "DTlzIGFrL_4",
-              btn: "Start",
+              btn: "Back",
             },
           });
         }}
@@ -142,4 +140,4 @@ const Receive = () => {
   );
 };
 
-export default Receive;
+export default Record;
