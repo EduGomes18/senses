@@ -13,6 +13,7 @@ export const Title = styled.Text`
   font-size: 18px;
   font-family: Montserrat Regular;
   color: ${Primary};
+  margin-bottom: 22px;
 `;
 
 export const Button = styled.TouchableOpacity`
