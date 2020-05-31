@@ -15,7 +15,7 @@ const Welcome = () => {
           navigate("Steps");
         }}
       >
-        <BtnText>Start my Sense experience</BtnText>
+        <BtnText>Start my Senses experience</BtnText>
       </Button>
     </Container>
   );

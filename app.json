@@ -18,6 +18,12 @@
     "ios": {
       "supportsTablet": true,
       "requireFullScreen": true
+    },
+    "android": {
+      "package": "senses.app"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#F15F7E"
     }
   }
 }
