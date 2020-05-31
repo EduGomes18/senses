@@ -21,13 +21,13 @@ const Steps = () => {
             navigate("Receive");
           }}
         >
-          <StepTitle>Receive Sense</StepTitle>
+          <StepTitle>Receive Experience</StepTitle>
         </Step>
       </ImgUp>
       <ImgUp source={couple}>
         <Blur />
         <Step color={Primary}>
-          <StepTitle>Record Sense</StepTitle>
+          <StepTitle>Record Experience</StepTitle>
         </Step>
       </ImgUp>
     </Container>

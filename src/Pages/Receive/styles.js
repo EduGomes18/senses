@@ -11,14 +11,42 @@ export const Container = styled.View`
 
 export const Card = styled.TouchableOpacity`
   width: 80%;
+  border-top-left-radius:32px;
+  flex-direction:row;
   background:${(props) => props.color}
   justify-content:center;
   align-items:center;
-  height: 20%;
+  height: 10%;
 `;
 
 export const CardTitle = styled.Text`
   font-size: 16px;
   font-family: Montserrat Regular;
   color: #fff;
+`;
+
+export const CardInner = styled.View`
+  width: 70%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+export const CardImage = styled.ImageBackground`
+  width: 30%;
+  height: 100%;
+`;
+
+export const BackButton = styled.TouchableOpacity`
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 22px;
+`;
+
+export const Back = styled.Text`
+  margin-left: 12px;
+  font-size: 16px;
+  font-family: Montserrat Bold;
+  color: ${Primary};
 `;
