@@ -36,6 +36,7 @@ export const Blur = styled.View`
 `;
 
 export const StepTitle = styled.Text`
+  text-align: center;
   font-size: 22px;
   color: #fff;
 `;

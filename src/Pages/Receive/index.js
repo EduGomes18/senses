@@ -1,5 +1,7 @@
 import React from "react";
+import { useNavigation } from "react-navigation-hooks";
 import { Red, Primary, Secondary, Gray, Yellow } from "../../Config";
+
 import taste from "../../../assets/images/pizza.jpg";
 import smell from "../../../assets/images/smell-2.jpg";
 import hear from "../../../assets/images/hear.jpg";
@@ -25,13 +27,23 @@ import {
 } from "./styles";
 
 const Receive = () => {
+  const { navigate } = useNavigation();
   return (
     <Container>
-      <BackButton>
+      <BackButton
+        onPress={() => {
+          navigate("Steps");
+        }}
+      >
         <Ionicons name="md-arrow-round-back" size={24} color="black" />
         <Back>Back</Back>
       </BackButton>
-      <Card color={Secondary}>
+      <Card
+        onPress={() => {
+          navigate("Taste");
+        }}
+        color={Secondary}
+      >
         <CardInner>
           <CardTitle>Taste</CardTitle>
           <MaterialCommunityIcons name="food" size={24} color="#fff" />
